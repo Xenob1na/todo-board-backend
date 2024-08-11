@@ -14,14 +14,14 @@ export const register = async (req, res) => {
     if (userExist) {
       return res.status(400).json({
         success: false,
-        message: "User already exist",
+        message: "Такой пользователь уже существует",
       });
     }
 
     if (password.length < 6) {
       return res.status(400).json({
         success: false,
-        message: "Password must be at least 6 characters",
+        message: "Пароль должен содержать не менее 6 символов",
       });
     }
 
@@ -33,7 +33,7 @@ export const register = async (req, res) => {
 
     return res.status(200).json({
       success: true,
-      message: "User created successfully",
+      message: "Регистрация прошла успешно",
     });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });

@@ -8,12 +8,14 @@ import {
   deleteTodo,
 } from "../controllers/todo.controller.js";
 
+import { verifyToken } from "../middlewares/checkToken.js";
+
 const router = express.Router();
 
-router.get("/todos", getTodos);
-router.get("/todos/:id", getTodosById);
-router.post("/todos", createTodo);
-router.put("/todos/:id", updateTodo);
-router.delete("/todos/:id", deleteTodo);
+router.get("/todos", verifyToken, getTodos);
+router.get("/todos/:id", verifyToken, getTodosById);
+router.post("/todos", verifyToken, createTodo);
+router.put("/todos/:id", verifyToken, updateTodo);
+router.delete("/todos/:id", verifyToken, deleteTodo);
 
 export default router;
