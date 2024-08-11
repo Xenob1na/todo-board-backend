@@ -1,0 +1,147 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Todos",
+    "collectionId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+    "dateExported": "2024-08-11T13:31:13.860Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "361b2237-da21-4995-aa0a-f886caf716d0",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-08-11T13:10:45.454Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5f84a0c2-f7ee-432c-96fd-70616457e1eb",
+            "name": "crud",
+            "containerId": "",
+            "created": "2024-08-11T13:10:55.269Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "dc15181a-4f81-4b90-88b3-522beca46f1e",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "5f84a0c2-f7ee-432c-96fd-70616457e1eb",
+            "name": "getTodos",
+            "url": "http://localhost:3000/api/todos/todos/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-02T13:38:38.440Z",
+            "modified": "2024-08-11T13:29:03.084Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Ivan\",\n  \"body\": \"AY\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzMzgyOTMyLCJleHAiOjE3MjM0NjkzMzJ9.p4cKi07yvzg3dvK3vx5ZxSGGEEGRGOGTe6hn6qqrWXI"
+            }
+        },
+        {
+            "_id": "980acc7d-5348-4158-8918-158df67f8d2b",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "361b2237-da21-4995-aa0a-f886caf716d0",
+            "name": "login",
+            "url": "http://localhost:3000/api/auth/log/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-08-02T15:34:14.852Z",
+            "modified": "2024-08-11T13:09:08.520Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"email\": \"petrov@mail.ru\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9aad7da3-2feb-4fa0-9dca-b4172bd81da9",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "5f84a0c2-f7ee-432c-96fd-70616457e1eb",
+            "name": "addTodo",
+            "url": "http://localhost:3000/api/todos/todos/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-11T13:09:52.576Z",
+            "modified": "2024-08-11T13:29:27.394Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"ww\",\n  \"body\": \"www\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzMzgyOTMyLCJleHAiOjE3MjM0NjkzMzJ9.p4cKi07yvzg3dvK3vx5ZxSGGEEGRGOGTe6hn6qqrWXI"
+            }
+        },
+        {
+            "_id": "f35b582f-ba4f-4240-b485-0b041f5b244f",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "5f84a0c2-f7ee-432c-96fd-70616457e1eb",
+            "name": "getTodoByid",
+            "url": "http://localhost:3000/api/todos/todos/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-08-11T13:11:31.388Z",
+            "modified": "2024-08-11T13:29:41.933Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzMzgyOTMyLCJleHAiOjE3MjM0NjkzMzJ9.p4cKi07yvzg3dvK3vx5ZxSGGEEGRGOGTe6hn6qqrWXI"
+            }
+        },
+        {
+            "_id": "8f1f4442-3089-4344-a36e-e9e8dc7d629a",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "5f84a0c2-f7ee-432c-96fd-70616457e1eb",
+            "name": "deleteTodo",
+            "url": "http://localhost:3000/api/todos/todos/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-08-11T13:11:59.473Z",
+            "modified": "2024-08-11T13:12:09.170Z",
+            "headers": []
+        },
+        {
+            "_id": "6a3c032a-f6c1-48fe-a4d7-e51a110651b1",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "5f84a0c2-f7ee-432c-96fd-70616457e1eb",
+            "name": "updateTodo",
+            "url": "http://localhost:3000/api/todos/todos/2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-08-11T13:12:33.959Z",
+            "modified": "2024-08-11T13:13:25.162Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Ivan\",\n  \"body\": \"Iogan\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c1dca8b4-aafc-41f2-a96f-e5d376434c18",
+            "colId": "8eaeae12-1b2e-488d-9a3b-2a85c1c5150c",
+            "containerId": "361b2237-da21-4995-aa0a-f886caf716d0",
+            "name": "register",
+            "url": "http://localhost:3000/api/auth/reg/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-08-11T13:14:01.335Z",
+            "modified": "2024-08-11T13:15:58.520Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"email\": \"danil@mail.ru\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "VIFWYYsXk-U_HeAKywpUrMKbb0SW8sl8GvJijTqhT3t66OXWUYuFFLxO4AU5c_Cq5C7l2q7VFR1E46mkPYrn2Q"
+}
